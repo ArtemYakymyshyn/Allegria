@@ -1,0 +1,35 @@
+.title-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px 0 20px 0;
+    
+    &__title {
+        @extend %sans-bold;
+        font-size: 30px;
+        color: $mine-shaft;
+    }
+
+    &__text {
+        padding-top: 20px;
+        @extend %sans-regular;
+        font-size: 13px;
+        text-decoration: none;
+        color: $silver-chalice;
+
+        .fa, .fas {
+            padding-left: 10px;
+            font-weight: 600;
+        }
+    }
+
+    @media only screen and (min-width: 640px){
+        
+        flex-direction: row;
+        align-items: center;
+        margin-top: 80px;
+        &__text {
+            padding: 0 0 0 50px;
+        }
+    }
+}

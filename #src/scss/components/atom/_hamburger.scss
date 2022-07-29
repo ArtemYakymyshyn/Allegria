@@ -1,0 +1,45 @@
+.humburger{
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 2em;
+  cursor: pointer;
+  
+  &:before, &:after{
+      content:'';
+      background-color: $mine-shaft;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.4s ease 0s;
+  }
+
+  &:after{
+      bottom: 0;
+  }
+  
+  .humburger-span{
+      background-color: $mine-shaft;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.4s ease 0s;
+  }
+}
+
+.active:before{
+  transform: rotate(45deg);
+  top: 9px;
+}	
+.active:after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+.active{
+  .humburger-span{
+      transform: scale(0);
+  }
+}

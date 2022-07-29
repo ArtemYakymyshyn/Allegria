@@ -1,0 +1,25 @@
+.title-heading{
+    display: flex;
+    justify-content: flex-start;
+    @extend %sans-extra;
+    font-size: 30px;
+    color: $alto;
+    
+    &__title{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+@media only screen and (min-width: 560px){
+    .title-heading{
+        justify-content: flex-end;
+        font-size: 40px;
+    }   
+}
+
+@media only screen and (min-width: 769px){
+    .title-heading{
+        font-size: 50px;
+    }   
+}

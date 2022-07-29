@@ -1,0 +1,173 @@
+a,
+div,
+button,
+p,
+input,
+span,
+header {
+   font-family: "Jost", sans-serif;
+}
+.header {
+   width: 100%;
+   height: 60px;
+   border-bottom: 1px solid #eae9e8;
+
+   .header__wrk {
+      max-width: 1440px;
+      margin: 0px auto;
+      padding-top: 13px;
+      margin-top: 10px;
+      @media (max-width: 1470px) {
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+      .header__wrk__row {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         .header__wrk__row__Logo {
+            font-size: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            width: 20%;
+            transition-duration: 0.3s;
+
+            &:hover {
+               color: #e64926;
+               letter-spacing: 10px;
+            }
+            @media (max-width: 1200px) {
+               width: 15%;
+            }
+            @media (max-width: 1000px) {
+               width: 80%;
+            }
+         }
+         .header-categoriesAndLangComb {
+            display: flex;
+            justify-content: space-between;
+            width: 64%;
+            align-items: start;
+            height: 60px;
+            @media (max-width: 1000px) {
+               position: absolute;
+               display: none;
+               top: 0;
+               left: 0;
+            }
+            .header__wrk__row__men_women_search {
+               display: flex;
+               align-items: center;
+               width: 70%;
+               justify-content: space-between;
+               @media (max-width: 1216px) {
+                  width: 80%;
+               }
+               @media (max-width: 1076px) {
+                  width: 80%;
+               }
+               .header-element__women_search {
+                  font-size: 16px;
+                  line-height: 22px;
+                  letter-spacing: 0.1em;
+                  color: #0f303f;
+                  cursor: pointer;
+                  &:hover {
+                     color: #e64926;
+                  }
+               }
+               .header-element__men {
+                  font-size: 16px;
+                  line-height: 22px;
+                  letter-spacing: 0.1em;
+                  color: #b7c1c5;
+                  cursor: pointer;
+                  &:hover {
+                     color: #e64926;
+                  }
+               }
+               .header-elment__searchwrapper {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .header-element-input {
+                     width: 150px;
+                     border-bottom: 1px solid #0f303f;
+                     margin-left: 20px;
+                     & input {
+                        font-size: 16px;
+                        padding: 0 4px;
+                     }
+                  }
+               }
+            }
+            .header__wrk__row__language {
+               display: flex;
+               width: 10%;
+               justify-content: space-between;
+               @media (max-width: 1200px) {
+                  width: 12%;
+               }
+               & p {
+                  font-size: 16px;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: #0f303f;
+                  cursor: pointer;
+                  transition-duration: 0.2s;
+                  &:hover {
+                     color: #e64926;
+                  }
+               }
+               .header-element__ukrainian {
+                  border-bottom: 2px solid #e64926;
+                  color: #e64926;
+                  padding-bottom: 29px;
+               }
+            }
+         }
+
+         .header__wrk__row__icons {
+            display: flex;
+            justify-content: space-between;
+            width: 6%;
+            @media (max-width: 1200px) {
+               width: 8%;
+            }
+            @media (max-width: 1000px) {
+               width: 12%;
+            }
+         }
+         .header__wrk__row__burgerwrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            @media (max-width: 1000px) {
+               display: block;
+            }
+            .header-burger {
+               width: 50px;
+               height: 25px;
+               display: flex;
+               justify-content: space-around;
+               align-items: end;
+               flex-direction: column;
+
+               .header-burger__longspan {
+                  width: 30px;
+                  height: 2px;
+                  background-color: black;
+                  display: block;
+               }
+               .header-burger__shortspan {
+                  display: block;
+                  width: 15px;
+                  height: 2px;
+                  background-color: black;
+               }
+            }
+         }
+      }
+   }
+}

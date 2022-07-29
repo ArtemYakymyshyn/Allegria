@@ -1,0 +1,48 @@
+.info-item {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+
+    // .info-item__title
+    &__title {
+        @extend %sans-regular;
+        font-size: 13px;
+        color: $mine-shaft;
+        padding-bottom: 10px;
+        span {
+            padding: 6px;
+            background-color: $mercury;
+        }
+    }
+
+    // .info-item__text
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .info-item__header
+    &__header {
+        padding: 15px 0;
+        @extend %sans-bold;
+        font-size: 18px;
+        color: $mine-shaft;
+    }
+
+    // .info-item__text-info
+    &__text-info {
+        @extend %sans-regular;
+        font-size: 13px;
+        color: $mine-shaft;
+    }
+
+    // .info-item__price
+    &__price {
+        padding: 15px 0;
+        @extend %sans-bold;
+        font-size: 16px;
+        color: $mine-shaft;
+    }
+}

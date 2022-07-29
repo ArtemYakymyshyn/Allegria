@@ -21,6 +21,9 @@ header {
          padding-left: 15px;
          padding-right: 15px;
       }
+      @media (max-width: 600px) {
+         min-width: 600px;
+      }
       .header__wrk__row {
          display: flex;
          justify-content: space-between;

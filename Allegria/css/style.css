@@ -1087,6 +1087,24 @@ header {
   }
 }
 
+@media (max-width: 600px) {
+  .header .header__wrk {
+    min-width: 600px;
+  }
+
+  .goods-line .goods-line__wrk {
+    min-width: 600px;
+  }
+
+  .similargoods-line .simgoods__wrk {
+    min-width: 600px;
+  }
+
+  .footer-line .footer-line__wrk {
+    min-width: 600px;
+  }
+}
+
 @media (max-width: 2px) {
   .similargoods-line .simgoods__wrk .simgoods-elementTwo .simgoods-cardTwo {
     display: none;

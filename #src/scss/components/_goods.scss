@@ -7,6 +7,9 @@
       @media (max-width: 1456px) {
          padding: 0 15px;
       }
+      @media (max-width: 600px) {
+         min-width: 600px;
+      }
       .goods-line__elementOne {
          display: flex;
          width: 30%;

@@ -3,6 +3,9 @@
    .simgoods__wrk {
       max-width: 1012px;
       margin: 0px auto;
+      @media (max-width: 600px) {
+         min-width: 600px;
+      }
       .simgoods-elementOne {
          font-weight: 500;
          font-size: 25px;

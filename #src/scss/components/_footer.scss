@@ -4,6 +4,9 @@
    .footer-line__wrk {
       max-width: 745px;
       margin: 0px auto;
+      @media (max-width: 600px) {
+         min-width: 600px;
+      }
       .footer-line__elementOne {
          width: 100%;
          display: flex;

@@ -7,9 +7,10 @@
       @media (max-width: 1456px) {
          padding: 0 15px;
       }
-      @media (max-width: 600px) {
-         min-width: 600px;
+      @media (max-width: 462px) {
+         min-width: 462px;
       }
+
       .goods-line__elementOne {
          display: flex;
          width: 30%;
@@ -26,6 +27,10 @@
          }
          @media (max-width: 714px) {
             width: 80%;
+         }
+         @media (max-width: 556px) {
+            width: 100%;
+            overflow: scroll;
          }
          .goods-elementOne__styleparag {
             font-weight: 400;

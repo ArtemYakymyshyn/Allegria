@@ -4,8 +4,8 @@
    .footer-line__wrk {
       max-width: 745px;
       margin: 0px auto;
-      @media (max-width: 600px) {
-         min-width: 600px;
+      @media (max-width: 462px) {
+         min-width: 462px;
       }
       .footer-line__elementOne {
          width: 100%;
@@ -19,6 +19,10 @@
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: #0f303f;
+            @media (max-width: 734px) {
+               font-size: 20px;
+               text-align: center;
+            }
          }
          .footer-line__input {
             margin-top: 20px;
@@ -36,6 +40,9 @@
                justify-content: center;
                align-items: center;
             }
+            @media (max-width: 568px) {
+               width: 60%;
+            }
          }
          .footer-line__info_links {
             width: 50%;
@@ -48,6 +55,9 @@
                line-height: 22px;
                color: #b7c1c5;
                cursor: pointer;
+            }
+            @media (max-width: 568px) {
+               width: 80%;
             }
          }
       }
@@ -63,5 +73,9 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 15px;
+      text-align: center;
+      @media (max-width: 462px) {
+         min-width: 462px;
+      }
    }
 }

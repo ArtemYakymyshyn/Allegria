@@ -15,67 +15,42 @@
          color: #0f303f;
          margin-top: 146px;
       }
-      .simgoods-elementTwo {
-         display: flex;
-         margin-top: 45px;
-         justify-content: space-between;
+
+      .swiper {
          width: 100%;
-         align-items: center;
-         .simgoods-card {
-            width: 25%;
-            transition-duration: 0.3s;
-            @media (max-width: 1024px) {
-               width: 40%;
-            }
-            @media (max-width: 666px) {
-               width: 60%;
-            }
-            .simgoods-card__img {
+         height: 500px;
+
+         .swiper-wrapper {
+            width: 100%;
+            .swiper-slide {
                display: flex;
                justify-content: center;
                align-items: center;
-            }
-            .simgoods-card__lable {
-               margin-top: 15px;
-               margin-bottom: 1px;
-               font-weight: 500;
-               font-size: 18px;
-               text-align: center;
-               text-transform: uppercase;
-               color: #0f303f;
-               line-height: 25px;
-            }
-            .simgoods-card__typeof {
-               font-weight: 300;
-               font-size: 16px;
-               text-align: center;
-               text-transform: capitalize;
-               color: #0f303f;
-               line-height: 22px;
-            }
-            .simgoods-card__price {
-               font-weight: 800;
-               font-size: 14px;
-               line-height: 19px;
-               text-align: center;
-               letter-spacing: 0.045em;
-               text-transform: uppercase;
-               color: #0f303f;
-            }
-            &:hover {
-               position: relative;
-               bottom: 5px;
-               background-color: rgba(255, 0, 0, 0.1g);
-            }
-         }
-         .simgoods-cardOne {
-            @media (max-width: 1024px) {
-               display: none;
-            }
-         }
-         .simgoods-cardTwo {
-            @media (max-width: 666px) {
-               display: none;
+               .simgoods-card {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  transition-duration: 0.3s;
+                  &:hover {
+                     position: relative;
+                     bottom: 3px;
+                     background-color: #e64926;
+                     .simgoods-card__text {
+                        color: white;
+                     }
+                  }
+                  .simgoods-card__lable {
+                     margin-top: 10px;
+                     margin-bottom: 10px;
+                  }
+                  .simgoods-card__typeof {
+                     margin-bottom: 10px;
+                  }
+                  .simgoods-card__price {
+                     margin-bottom: 10px;
+                  }
+               }
             }
          }
       }

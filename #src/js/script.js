@@ -15,3 +15,9 @@ favouriteButton.addEventListener('click', (e) => {
    favouriteButton.setAttribute('srcset', 'img/logos/favred.webp');
    favouriteButton.setAttribute('src', 'img/logos/favred.webp')
 });
+
+
+
+
+
+
